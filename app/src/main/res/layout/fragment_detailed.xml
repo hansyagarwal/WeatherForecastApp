@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DetailedFragment">
+
+    <ImageView
+        android:id="@+id/iconV3"
+        android:layout_width="85dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/btn_star_big_on"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detailsDateT"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iconV3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/deatailsTempT"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:text="34 C"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/detailsMinMaxT"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/detailsHumidT"
+        app:layout_constraintTop_toBottomOf="@+id/detailsDescT" />
+
+    <TextView
+        android:id="@+id/detailsMainT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iconV3"
+        app:layout_constraintTop_toBottomOf="@+id/detailsDateT" />
+
+    <TextView
+        android:id="@+id/detailsDescT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iconV3"
+        app:layout_constraintTop_toBottomOf="@+id/detailsMainT" />
+
+    <TextView
+        android:id="@+id/detailsMinMaxT"
+        android:layout_width="74dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsDescT" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Morning"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/tv4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsHumidT" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:text="Evening"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/tv5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv3"
+        app:layout_constraintTop_toBottomOf="@+id/deatailsTempT" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:text="Night"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv4"
+        app:layout_constraintTop_toBottomOf="@+id/detailsMinMaxT" />
+
+    <TextView
+        android:id="@+id/detailsHumidT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:text="Humidity: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconV3" />
+
+    <TextView
+        android:id="@+id/mornT"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/eveT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <TextView
+        android:id="@+id/nightT"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/eveT"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+    <TextView
+        android:id="@+id/eveT"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/nightT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mornT"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
